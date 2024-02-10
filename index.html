@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panqueques de Avena</title>
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #feefa4;
+    }
+
+    .card {
+      max-width: 736px;
+      margin: 123px auto 123px auto;
+      padding: 2.5rem;
+      background-color: #F7FFF7;
+      border-radius: 1.5rem;
+    }
+
+    .card__image {
+      width: 100%;
+      border-radius: 0.75rem;
+      margin-bottom: 2rem;
+    }
+
+    .card__title {
+      margin-bottom: 2rem;
+    }
+
+    .card__tittle-title {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .card__tittle-description {
+      color: #1A535C;
+      text-align: justify;
+      line-height: 1.5;
+    }
+
+    .card__preparation {
+      padding: 1.75rem;
+      background-color: #b9fffa;
+      border-radius: 0.75rem;
+      margin-bottom: 2rem;
+    }
+
+    .card__preparation-title {
+      margin-bottom: 1rem;
+      color: #ad0d0d;
+      font-size: 1.25rem;
+    }
+
+    .card__preparation-list {
+      list-style: none;
+      line-height: 1.5;
+    }
+
+    .card__preparation-list li {
+      display: flex;
+      align-items: center;
+      color: #1A535C;
+    }
+
+    .card__preparation-list li:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
+
+    .card__preparation-list li::before {
+      content: "\2022";
+      width: 1rem;
+      margin-inline: 0.5rem 1rem;
+      color: #ad0d0d;
+
+    }
+
+    .card__ingredients {
+      margin-bottom: 2rem;
+    }
+
+    .card__ingredients-title {
+      font-size: 1.75rem;
+      color: #ad0d0d;
+      margin-bottom: 1.5rem;
+    }
+
+    .card__ingredients-list {
+      list-style: none;
+      color: #1A535C;
+      line-height: 1.5;
+    }
+
+    .card__ingredients-list li{
+      display: flex;
+      align-items: center;
+    }
+
+    .card__ingredients-list li:not(:last-child){
+      margin-bottom: 0.5rem;
+    }
+
+    .card__ingredients-list li::before {
+      content: "\2022";
+      width: 1rem;
+      margin-inline: 0.5rem 1rem;
+      color: #ad0d0d;
+    }
+
+    .card__divider {
+      margin-bottom: 2rem;
+      border: none;
+      background-color: #ad0d0d;
+      height: 1px;
+    }
+
+    .card__instructions {
+      margin-bottom: 2rem;
+    }
+
+    .card__instructions-title {
+      margin-bottom: 1.5rem;
+      color: #ad0d0d;
+      font-size: 1.75rem;
+    }
+
+    .card__instructions-list {
+      list-style: none;
+      line-height: 1.5;
+      color: #1A535C;
+      counter-reset: lista;
+    }
+
+    .card__instructions-list li {
+      counter-increment: lista;
+      display: flex;
+    }
+
+    .card__instructions-list li:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
+
+    .card__instructions-list li::before {
+      content: counter(lista)". ";
+      font-weight: 600;
+      color: #ad0d0d;
+      margin-inline: 0.5rem 1rem;
+    }
+
+    .card__nutrition-title {
+      color: #ad0d0d;
+    }
+
+    .card__nutrition-description {
+
+    }
+
+  </style>
+</head>
+
+<body>
+  <main>
+    <section class="card">
+      <img src="/images/760X4803-Hotcakes.png" alt="" class="card__image">
+      <div class="card__content">
+        <div class="card__title">
+          <h1 class="card__tittle-title">Panqueques de Avena</h1>
+          <p class="card__tittle-description">
+            Prepara rápidamente unos deliciosos panqueques de avena, mezclando avena molida con huevos
+            y leche. Cocina en minutos para obtener una opción nutritiva y versátil. Puedes personalízalos con frutas
+            frescas,
+            chocolate o nueces para disfrutar de un desayuno o merienda perfecta en cualquier momento.
+          </p>
+        </div>
+        <div class="card__preparation">
+          <h2 class="card__preparation-title">Tiempo de preparación</h2>
+          <ul class="card__preparation-list">
+            <li><p><b>Preparación:</b> 5 minutos</p></li>
+            <li><p><b>Cocinado:</b> 10 minutos</p></li>
+            <li><p><b>Total:</b> Aproximadamente 15 minutos</p></li>
+          </ul>
+        </div>
+        <div class="card__ingredients">
+          <h2 class="card__ingredients-title">Ingredientes</h2>
+          <ul class="card__ingredients-list">
+            <li>1 taza y media de avena</li>
+            <li>1 taza y media de leche</li>
+            <li>3 cucharadas de azúcar</li>
+            <li>2 huevos</li>
+            <li>1/2 cucharadita de canela en polvo</li>
+            <li>1/2 cucharadita de polvo de hornear</li>
+            <li>2 cucharadita de vainilla</li>
+            <li>Aceite</li>
+            <li>Opcional: 1 cucharada de café, frutos secos o plátano</li>
+          </ul>
+        </div>
+        <hr class="card__divider">
+        <div class="card__instructions">
+          <h2 class="card__instructions-title">Instrucciones</h2>
+          <ol class="card__instructions-list">
+            <li>Licuar la avena hasta que esté molida.</li>
+            <li>Licuar la avena molida con la leche, el azúcar, los huevos, la canela en polvo, polvo de hornear, la vainilla y si
+              desea agregar un poco de café.
+            </li>
+            <li>Echar un poco de aceite en la sartén un colocar la mezcla hasta que se dore por ambos lados.</li>
+            <li>Servir en un plato y si desea acompañar con frutos secos o plátano.</li>
+          </ol>
+        </div>
+        <hr class="card__divider">
+        <div class="card__nutrition">
+          <h2 class="card__nutrition-title">Informe Nutricional</h2>
+          <p class="card__nutrition-description"></p>
+          <table></table>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
